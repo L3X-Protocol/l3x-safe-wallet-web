@@ -69,7 +69,7 @@ const Header = ({ onMenuToggle, onBatchToggle }: HeaderProps): ReactElement => {
 
       <div className={classnames(css.element, css.hideMobile, css.logo)}>
         <Link href={logoHref} passHref>
-          <SafeLogo alt="Safe logo" />
+          <img src="/images/logo.png" alt="L3XSafe logo" width={200} height={55} />
         </Link>
       </div>
 
