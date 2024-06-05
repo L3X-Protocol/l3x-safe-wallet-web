@@ -26,7 +26,7 @@ const Messages: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'L3XSafe – Messages'}</title>
+        <title>L3XSafe – Messages</title>
       </Head>
 
       <TxHeader>

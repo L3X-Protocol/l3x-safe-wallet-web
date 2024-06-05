@@ -593,7 +593,7 @@ const CookiePolicy: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'L3XSafe – Cookie policy'}</title>
+        <title>L3XSafe – Cookie policy</title>
       </Head>
 
       <main>{IS_OFFICIAL_HOST && <SafeCookiePolicy />}</main>

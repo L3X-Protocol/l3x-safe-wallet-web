@@ -32,7 +32,7 @@ const Appearance: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'L3XSafe – Settings – Appearance'}</title>
+        <title>L3XSafe – Settings – Appearance</title>
       </Head>
 
       <SettingsHeader />
