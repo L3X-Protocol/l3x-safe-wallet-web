@@ -75,7 +75,7 @@ const Footer = (): ReactElement | null => {
             </li>
           </>
         ) : (
-          <li>{'Powered by safe.global'}</li>
+          <li>Powered by safe.global</li>
         )}
 
         <li>

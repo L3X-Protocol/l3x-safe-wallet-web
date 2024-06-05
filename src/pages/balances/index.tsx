@@ -20,7 +20,7 @@ const Balances: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'L3XSafe – Assets'}</title>
+        <title>L3XSafe – Assets</title>
       </Head>
 
       <AssetsHeader>

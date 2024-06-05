@@ -16,7 +16,7 @@ const NotificationsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'L3XSafe – Settings – Notifications'}</title>
+        <title>L3XSafe – Settings – Notifications</title>
       </Head>
 
       <SettingsHeader />

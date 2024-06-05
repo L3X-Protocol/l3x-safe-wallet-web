@@ -17,7 +17,7 @@ const Settings: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'L3XSafe – Settings'}</title>
+        <title>L3XSafe – Settings</title>
       </Head>
     </>
   )

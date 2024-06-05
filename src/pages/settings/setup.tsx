@@ -19,7 +19,7 @@ const Setup: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'L3XSafe – Settings – Setup'}</title>
+        <title>L3XSafe – Settings – Setup</title>
       </Head>
 
       <SettingsHeader />

@@ -18,7 +18,7 @@ const Swap: NextPage = () => {
   return (
     <>
       <Head>
-        <title>{'L3XSafe – Swap'}</title>
+        <title>L3XSafe – Swap</title>
       </Head>
 
       <main className="swapWrapper">
