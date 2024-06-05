@@ -42,9 +42,9 @@ export const createOnboard = (
     },
 
     appMetadata: {
-      name: 'Safe{Wallet}',
-      icon: location.origin + '/images/logo-round.svg',
-      description: 'Safe{Wallet} – smart contract wallet for Ethereum (ex-Gnosis Safe multisig)',
+      name: 'L3XSafe',
+      icon: '<svg height="100%"><image href="/images/safe-logo-blue.png" height="100%" /></svg>',
+      description: 'Please select a wallet to connect to L3XSafe',
     },
 
     connect: {
