@@ -6,19 +6,14 @@ COPY . .
 # Fix arm64 timeouts
 RUN yarn config set network-timeout 300000 && yarn global add node-gyp
 
-# install deps
+# Install deps
 RUN yarn install --frozen-lockfile
 RUN yarn after-install
 
 ENV NODE_ENV production
-
-# Next.js collects completely anonymous telemetry data about general usage.
-# Learn more here: https://nextjs.org/telemetry
-# Uncomment the following line in case you want to disable telemetry during the build.
 ENV NEXT_TELEMETRY_DISABLED 1
 
-EXPOSE 3000
-
-ENV PORT 3000
+# Use Railway's PORT variable
+EXPOSE $PORT
 
 CMD ["yarn", "static-serve"]
