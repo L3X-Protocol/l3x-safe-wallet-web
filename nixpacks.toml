@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ['python38']
+nixPkgs = ['nodejs','yarn','python3']
 
 [phases.build]
 cmds = ['yarn build']
