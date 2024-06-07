@@ -1,5 +1,6 @@
 [phases.setup]
-nixPkgs = ['nodejs', 'yarn', 'python']
+nixPkgs = ['nodejs', 'yarn', 'python3']
+providers = ['python3']
 
 [phases.build]
 cmds = ['yarn build']
