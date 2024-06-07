@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ['nodejs', 'yarn', 'python3', 'gcc', 'make', 'libusb']
+nixPkgs = ['nodejs', 'yarn', 'python3', 'libgcc', 'gnumake', 'libusb']
 providers = ['python3']
 
 [phases.build]
