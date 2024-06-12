@@ -56,5 +56,3 @@ yalc.lock
 /public/*.js.LICENSE.txt
 certificates
 *storybook.log
-
-Dockerfile*
