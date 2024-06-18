@@ -17,6 +17,9 @@ import { useIsRecoverySupported } from '@/features/recovery/hooks/useIsRecoveryS
 import ActivityRewardsSection from '@/components/dashboard/ActivityRewardsSection'
 import { useHasFeature } from '@/hooks/useChains'
 import { FEATURES } from '@/utils/chains'
+import css from './styles.module.css'
+import SwapWidget from '@/features/swap/components/SwapWidget'
+
 const RecoveryHeader = dynamic(() => import('@/features/recovery/components/RecoveryHeader'))
 
 const Dashboard = (): ReactElement => {
@@ -24,6 +27,7 @@ const Dashboard = (): ReactElement => {
   const { safe } = useSafeInfo()
   const { [CREATION_MODAL_QUERY_PARM]: showCreationModal = '' } = router.query
   const showSafeApps = useHasFeature(FEATURES.SAFE_APPS)
+  const isSAPBannerEnabled = useHasFeature(FEATURES.SAP_BANNER)
   const supportsRecovery = useIsRecoverySupported()
   const [recovery] = useRecovery()
   const showRecoveryWidget = supportsRecovery && !recovery
@@ -37,13 +41,21 @@ const Dashboard = (): ReactElement => {
           <Overview />
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid item xs={12} className={css.hideIfEmpty}>
           <FirstSteps />
         </Grid>
 
         {safe.deployed && (
           <>
-            <ActivityRewardsSection />
+            <Grid item xs={12} xl={isSAPBannerEnabled ? 6 : 12} className={css.hideIfEmpty}>
+              <SwapWidget />
+            </Grid>
+
+            <Grid item xs className={css.hideIfEmpty}>
+              <ActivityRewardsSection />
+            </Grid>
+
+            <Grid item xs={12} />
 
             <Grid item xs={12} lg={6}>
               <AssetsWidget />
