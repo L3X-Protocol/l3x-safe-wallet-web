@@ -73,7 +73,7 @@ const Overview = (): ReactElement => {
                 </Typography>
                 <Typography component="div" variant="h1" fontSize={44} lineHeight="40px">
                   {safe.deployed ? (
-                    <FiatValue value={balances.fiatTotal} />
+                    <FiatValue value={balances.fiatTotal} maxLength={20} />
                   ) : (
                     <TokenAmount
                       value={balances.items[0].balance}
@@ -131,6 +131,7 @@ const Overview = (): ReactElement => {
                       <Track {...SWAP_EVENTS.OPEN_SWAPS} label={SWAP_LABELS.dashboard}>
                         <Link href={{ pathname: AppRoutes.swap, query: router.query }} passHref type="button">
                           <Button
+                            data-testid="overview-swap-btn"
                             size={isSmallScreen ? 'medium' : 'small'}
                             variant="outlined"
                             color="primary"
