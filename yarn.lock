@@ -4151,7 +4151,7 @@
 
 "@l3x-protocol/safe-deployments@^1.37.0":
   version "1.37.0"
-  resolved "https://registry.yarnpkg.com/@l3x-protocol/safe-deployments/-/safe-deployments-1.37.0.tgz#aeb30cdd64f1260e994ea4f9081d574cc80da99f""
+  resolved "https://registry.yarnpkg.com/@l3x-protocol/safe-deployments/-/safe-deployments-1.37.0.tgz#aeb30cdd64f1260e994ea4f9081d574cc80da99f"
   integrity sha512-z2yWxWiSM2OIGWxoaC4P7wJe/0jEpNE035T0oa9keUpVSeNFwmvYzI+P4yDIkUvZaJYZOSkCDfrPyY2mUcQAkw==
   dependencies:
     rimraf "^5.0.7"
